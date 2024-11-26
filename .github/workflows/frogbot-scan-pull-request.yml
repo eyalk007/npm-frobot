@@ -1,6 +1,6 @@
 name: "Frogbot Scan Pull Request"
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize]
 permissions:
   pull-requests: write
@@ -19,6 +19,8 @@ jobs:
           # [Mandatory]
           # JFrog platform URL
           JF_URL: ${{ secrets.JF_URL }}
+
+          JFROG_CLI_LOG_LEVEL: DEBUG
 
           # [Mandatory if JF_USER and JF_PASSWORD are not provided]
           # JFrog access token with 'read' permissions on Xray service

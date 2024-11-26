@@ -10,8 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "color": "^4.2.3",
     "express": "^4.21.1",
     "jose": "1.10",
-    "log4j": "^1.0.0"
+    "log4j": "^1.0.0",
+    "tes-publish": "^1.0.3"
   }
 }
